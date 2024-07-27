@@ -3,63 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./reset.css">
+
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1> Bienvenido a la página web donde podras adquirir figuritas de Star Wars</h1>
+        <h1> Bienvenido al mundo de las figuritas de Star Wars</h1>
 
-        <span> Tamaño 10 cm /</span>
-        <span> Tamaño 50 cm /</span>
-        <span> Tamaño 100 cm</span>
-
-        <div>
-            <img src="./logo.jpg" />
-        </div>
+        <nav>
+            
+                <a href="index.html">Inicio</a>
+                <a href="compra.html">Comprar</a>
+           
+        </nav>
 
     </header>
 
-    <hr />
-
     <main>
-        <section>
-            <article>
-                <h2> Primera saga "IV - V - VI"</h2>
-                <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus quibusdam eaque perferendis, nam deleniti, accusamus id sed accusantium ducimus, laboriosam asperiores! Perspiciatis, nobis itaque. Odio sequi eveniet temporibus quis.</div>
-                <ol> 
-                    <li> Luke</li>
-                    <li> Leia</li>
-                    <li> Obi-wan</li>
-                    <li> Darth-Vader</li>
-                </ol>
+        <h2>Esto es la página de inicio</h2>
+        <p>Bienvenido a nuestro sitio web. Haz clic en "Comprar" para ver nuestros productos.</p>
 
-            </article>
-
-            <hr/>
-            <article>
-                <h2> Segunda saga "I - II - III"</h2>
-                <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus quibusdam eaque perferendis, nam deleniti, accusamus id sed accusantium ducimus, laboriosam asperiores! Perspiciatis, nobis itaque. Odio sequi eveniet temporibus quis.</div>
-                <ol> 
-                    <li> Anakin</li>
-                    <li> Jar Jar Binks</li>
-                    <li> Yoda</li>
-                    <li> Palpatine</li>
-                </ol>
-
-            </article>
-
-        </section>
-        
+        <div class="product-grid">
+            <div class="product">
+                <img src="./imagenes/anakin.png" alt="Producto 1">
+                <p>Anakin - 80$</p>
+            </div>
+            <div class="product">
+                <img src="./imagenes/darth vader.png" alt="Producto 2">
+                <p>Darth Vader - 70$</p>
+            </div>
+            <div class="product">
+                <img src="./imagenes/jar jar.png" alt="Producto 3">
+                <p>Jar Jar Binks - 60$</p>
+            </div>
+            <div class="product">
+                <img src="./imagenes/leia.png" alt="Producto 4">
+                <p>Leia - 50$</p>
+            </div>
+            <div class="product">
+                <img src="./imagenes/luke.png" alt="Producto 5">
+                <p>Luke - 900$</p>
+            </div>
+            <div class="product">
+                <img src="./imagenes/obi wan.png" alt="Producto 6">
+                <p>Obi Wan - 120$</p>
+            </div>
+            <div class="product">
+                <img src="./imagenes/palpatine.png" alt="Producto 7">
+                <p>Palpatine - 90$</p>
+            </div>
+            <div class="product">
+                <img src="./imagenes/yoda.png" alt="Producto 8">
+                <p>Yoda - 200$</p>
+            </div>
+        </div>
     </main>
 
-    <hr />
-
     <footer>
-       <div>
-        <p> Ingresa para comprar en nuestra web</p>
-        <a href="./compra.html"> Comprar</a>
-       </div> 
-
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="./imagenes/face.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="./imagenes/twitter.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="./imagenes/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+        <div class="contact-form">
+            <h3>Contáctanos</h3>
+            <form action="thanks.html" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <p>&copy; 2024 Nombre de la Tienda. Todos los derechos reservados.</p>
     </footer>
     
 </body>

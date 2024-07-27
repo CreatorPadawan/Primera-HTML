@@ -3,41 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Compra la cantidad y coloca bien tus datos</h1>
-    </header>
-
+        <h1>Tienda</h1>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./compra.html">Comprar</a>
+        </nav>
+    </header>   
     <main>
-        <div>
-            
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto dolorum assumenda enim fugiat explicabo voluptatem error sequi voluptatibus nisi perferendis sint, corporis expedita laboriosam minus laborum in eius! Ipsam!</p>
-
+        <h2>Selecciona tus productos</h2>
+        
+        <!-- Carrusel de productos -->
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="ruta_de_la_imagen1.jpg" alt="Producto 1">
+                <p>Producto 1 - $10.00</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="carousel-item">
+                <img src="ruta_de_la_imagen2.jpg" alt="Producto 2">
+                <p>Producto 2 - $15.00</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="carousel-item">
+                <img src="ruta_de_la_imagen3.jpg" alt="Producto 3">
+                <p>Producto 3 - $20.00</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="carousel-item">
+                <img src="ruta_de_la_imagen4.jpg" alt="Producto 4">
+                <p>Producto 4 - $25.00</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="carousel-item">
+                <img src="ruta_de_la_imagen5.jpg" alt="Producto 5">
+                <p>Producto 5 - $30.00</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="carousel-item">
+                <img src="ruta_de_la_imagen6.jpg" alt="Producto 6">
+                <p>Producto 6 - $35.00</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="carousel-item">
+                <img src="ruta_de_la_imagen7.jpg" alt="Producto 7">
+                <p>Producto 7 - $40.00</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="carousel-item">
+                <img src="ruta_de_la_imagen8.jpg" alt="Producto 8">
+                <p>Producto 8 - $45.00</p>
+                <button>Seleccionar</button>
+            </div>
         </div>
 
-        <form>
+        <!-- Formulario de opciones de pago -->
+        <h2>Opciones de Pago</h2>
+        <form action="payment.html" method="POST">
+            <label for="payment-method">Método de Pago:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="bitcoins">Bitcoins</option>
+            </select>
 
-            <div>
-                <input type="text" name="nombre" placeholder="Nombre"/>
+            <!-- Datos para tarjeta -->
+            <div id="card-info" style="display: none;">
+                <label for="card-number">Número de Tarjeta:</label>
+                <input type="text" id="card-number" name="card-number">
 
+                <label for="card-expiry">Fecha de Expiración:</label>
+                <input type="text" id="card-expiry" name="card-expiry">
+
+                <label for="card-cvc">CVC:</label>
+                <input type="text" id="card-cvc" name="card-cvc">
             </div>
-            
-            <div>
-                <input type="text" name="apellido" placeholder="Apellido"/>
+
+            <!-- Datos para Bitcoins -->
+            <div id="bitcoin-info" style="display: none;">
+                <p>Envía tus bitcoins a la siguiente dirección:</p>
+                <p><strong>1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</strong></p>
             </div>
 
-            <div>
-                <input type="number" name="cantidad" placeholder="Cantidad"/>
-            </div>
-
-            <div>
-                <input type="email" name="email" placeholder="Correo electrónico"/>
-            </div>
-
-            <button>Comprar</button>
+            <button type="submit">Pagar</button>
+        </form>
     </main>
-    
+    <footer>
+        <p>&copy; 2024 Nombre de la Tienda. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

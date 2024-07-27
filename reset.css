@@ -1,0 +1,57 @@
+/* reset.css */
+
+/* Elimina los márgenes y el relleno predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Elimina el estilo de lista predeterminado */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Elimina el subrayado de los enlaces */
+  a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del elemento padre */
+  }
+  
+  /* Elimina el estilo predeterminado de los encabezados */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
+  
+  /* Establece un tamaño de fuente básico para el cuerpo */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Elimina el borde predeterminado de los botones */
+  button {
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  
+  /* Establece un tamaño básico para las tablas */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Establece un tamaño básico para los campos de entrada */
+  input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  /* Elimina el borde predeterminado de las imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
